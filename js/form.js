@@ -21,7 +21,7 @@ var formModule=(function(v){
 					if(ylen==1){res=v[valArr](this.fileds[i].value);}
 					else{res=v[valArr[y]](this.fileds[i].value);}
 					if(!res[0]){
-						this.fileds[i].focus();
+						//this.fileds[i].focus();
 						errInputHandler(this.fileds[i],res);
 						return [false,this.fileds[i],res[1]];
 					}
@@ -36,6 +36,11 @@ var formModule=(function(v){
 		//------------------Attach event to Form fields--------------------------
 		for(var i=0,len=this.fileds.length;i<len;i++){
 			this.fileds[i].onchange=function(){
+				self.check();
+				var id=this.getAttribute('id');
+				document.getElementById("p-"+id).innerHTML=this.value;
+			}
+			this.fileds[i].onkeyup=function(){
 				self.check();
 				var id=this.getAttribute('id');
 				document.getElementById("p-"+id).innerHTML=this.value;
