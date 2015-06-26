@@ -17,6 +17,7 @@
 			preview.phonePreview("phone","p-phone");	
 		}
 		preview.ele("phone").onchange=function(){
+			f.check();
 			preview.phonePreview("phone","p-phone");	
 		}
 	});
