@@ -66,7 +66,7 @@ var formModule=(function(v){
 		errTag.innerHTML=res[1];
 		f.parentElement.appendChild(errTag);
 		f.parentElement.className+=" has-error";
-		window.scrollTo(0,f.scrollTop);
+		//window.scrollTo(0,f.scrollTop);
 	}
 	function correctInputHandler(){
 		var errMsg=document.querySelectorAll(".text-danger");
