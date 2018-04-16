@@ -1,6 +1,8 @@
 # hcard
 # Frontend Development Test
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/luyi985/hcard.svg)](https://greenkeeper.io/)
+
 ## Task: hCard Builder
 
 [hCard is a simple, open format for publishing people, companies and
